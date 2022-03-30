@@ -8,7 +8,7 @@ const CardEl = styled.div`
   width: 100%;
   margin: 0 auto;
   border-radius: 10px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 3px 10px 5px hsla(237, 63%, 64%, 0.2);
   color: ${({ front }) => (front ? "white" : "var(--col-light-gray-blue)")};
   padding: 2rem;
   text-align: center;

@@ -12,12 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   --col-primary:hsl(237, 63%, 64%);
   --col-secondary: hsl(233, 13%, 49%)
 
-
-  --shadow:  0 3px 10px 5px hsla(237, 63%, 64%, .1);
-
   --font-primary: 'Montserrat', sans-serif;
-
-  --text-2xl:font-size: 1.5rem; 
 
   --border-dark: 1px solid var(--col-light-gray-blue);
   --border-light: 1px solid var(--col-very-light-gray-blue)

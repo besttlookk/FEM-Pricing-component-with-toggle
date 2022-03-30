@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const ButtonEl = styled.button`
   display: inline-block;
@@ -9,7 +9,7 @@ const ButtonEl = styled.button`
   border-radius: 5px;
   outline: none;
   padding: 1rem 0;
-  color: ${({ front }) => (front ? "hsl(237, 63%, 64%)" : "White")};
+  color: ${({ front }) => (front ? "var(--col-primary)" : "White")};
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.5s;
@@ -17,8 +17,16 @@ const ButtonEl = styled.button`
   &:hover {
     color: white;
     background: transparent;
-    color: ${({ front }) => (!front ? "hsl(237, 63%, 64%)" : "White")};
-    border-color: ${({ front }) => (!front ? "hsl(237, 63%, 64%)" : "White")};
+    ${({ front }) =>
+      front
+        ? css`
+            color: white;
+            border-color: white;
+          `
+        : css`
+            color: var(--col-primary);
+            border-color: var(--col-primary);
+          `}
   }
 `;
 
