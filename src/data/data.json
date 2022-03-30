@@ -1,0 +1,35 @@
+[
+  {
+    "heading": "Basic",
+    "price": {
+      "month": 19.99,
+      "annual": 199.99
+    },
+    "storage": "500 GB",
+    "userAllowed": 2,
+    "limit": "2 GB",
+    "front": false
+  },
+  {
+    "heading": "Professional",
+    "price": {
+      "month": 24.99,
+      "annual": 249.99
+    },
+    "storage": "1 TB",
+    "userAllowed": 5,
+    "limit": "10 GB",
+    "front": true
+  },
+  {
+    "heading": "Master",
+    "price": {
+      "month": 39.99,
+      "annual": 399.99
+    },
+    "storage": "2 TB",
+    "userAllowed": 10,
+    "limit": "20 GB",
+    "front": false
+  }
+]
